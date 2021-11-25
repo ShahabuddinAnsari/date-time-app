@@ -2,14 +2,14 @@ import React from 'react';
 import './App.css';
 import { DigitalClock } from './component/time/DitigalClock';
 import { Timer } from './component/time/Timer';
+import AnalogueClock from './component/time/AnalogueClock';
 
 function App() {
   return (
     <div className="App">
-      <section className="navigationList"></section>
-      <section className="mainContainer"></section>
-
+      <DigitalClock />
       <Timer />
+      <AnalogueClock />
     </div>
   );
 }

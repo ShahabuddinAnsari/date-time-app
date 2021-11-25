@@ -27,7 +27,6 @@ export const DigitalClock = () => {
     }
 
     const hourFormatted = ('0' + calculateHour(hour)).slice(-2);
-    const t = hour > 12 ? (hour - 12) : hour;
     const minuteFormatted = ('0' + minute).slice(-2);
     const secondFormatted = ('0' + second).slice(-2);
     const section = hour >= 12 ? 'PM' : 'AM';

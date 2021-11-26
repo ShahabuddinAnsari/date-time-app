@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
 import { DigitalClock } from './component/time/DitigalClock';
-import { Timer } from './component/time/Timer';
+import { Timer } from './component/time/timer/Timer';
 import AnalogueClock from './component/time/AnalogueClock';
 
 function App() {
   return (
     <div className="App">
-      <DigitalClock />
+      {/* <DigitalClock /> */}
       <Timer />
-      <AnalogueClock />
+      {/* <AnalogueClock /> */}
     </div>
   );
 }

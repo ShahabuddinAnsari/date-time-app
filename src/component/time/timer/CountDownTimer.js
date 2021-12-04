@@ -2,7 +2,7 @@ import React from 'react';
 
 export const CountDownTimer = ({ hoursMinSecs }) => {
 
-    const { hours = 0, minutes = 0, seconds = 5 } = hoursMinSecs;
+    const { hours = 0, minutes = 0, seconds = 10 } = hoursMinSecs;
     const [[hrs, mins, secs], setTime] = React.useState([hours, minutes, seconds]);
 
     const tick = () => {

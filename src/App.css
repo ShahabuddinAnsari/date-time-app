@@ -1,27 +1,32 @@
+.container {
+  display: grid;
+  gap: 1.5 rem;
+}
+
+.container-time,
+.container-calc,
+.container-calendar,
+.container-weather {
+  width: 200px;
+  height: 200px;
+  background-color: yellowgreen;
+  border: 2px solid black;
+}
+
 .header-main {
   display: flex;
-  background-color: #23252f;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.92);
   color: white;
   width: 100%;
   margin-bottom: 8px;
-  font-size: 20px;
+  font-size: 12px;
 }
 
 .header-nav {
   padding: 12px;
-  border: 2px solid #23252f;
   cursor: pointer;
-}
-
-.header-nav:hover, .header-nav:active {
-  opacity: 0.7;
-  border-bottom-color: red;
-}
-
-.header-nav-divider {
-  width: 1px;
-  background-color: white;
-  padding: 8px 0;
 }
 
 .clock {

@@ -1,21 +1,23 @@
 import React from 'react';
 import './App.css';
 import 'react-calendar/dist/Calendar.css';
-import { DigitalClock } from './component/time/DitigalClock';
-import { Timer } from './component/time/timer/Timer';
-import AnalogueClock from './component/time/AnalogueClock';
-import { CalendarComponent } from './component/calendar/Calendar';
 import { Header } from './component/Header';
+import { TimeContainer } from './component/container/TimeContainer';
+import { CalcContainer } from './component/container/CalcContainer';
+import { CalendarContainer } from './component/container/CalendarContainer';
+import { WeatherContainer } from './component/container/WeatherContainer';
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <Header />
-      {/* <DigitalClock />
-      <Timer />
-      <AnalogueClock />
-      <CalendarComponent /> */}
-    </div>
+      <section className="container">
+        <div className="container-time"><TimeContainer /></div>
+        <div className="container-calc"><CalcContainer /></div>
+        <div className="container-calendar"><CalendarContainer /></div>
+        <div className="container-weather"><WeatherContainer /></div>
+      </section>
+    </main>
   );
 }
 

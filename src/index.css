@@ -5,7 +5,7 @@
 }
 
 .digiClock {
-  background-color: #0C325D;
+  /* background-color: #0C325D; */
   color: #44E70C;
   font-size: 50px;
   font-weight: 400;
@@ -14,7 +14,6 @@
   letter-spacing: 3px;
 }
 
-.digitalClockContainer {
-  border: 4px solid #581845;
+/* .digitalClockContainer {
   margin: 8px;
-}
+} */

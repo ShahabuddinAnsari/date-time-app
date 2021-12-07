@@ -33,7 +33,6 @@ export const DigitalClock = () => {
 
     return (
         <div className="digitalClockContainer">
-            <h1>DigitalClock</h1>
             <p className="digiClock">{`${hourFormatted} : ${minuteFormatted} : ${secondFormatted} ${section}`} </p>
         </div>
     )

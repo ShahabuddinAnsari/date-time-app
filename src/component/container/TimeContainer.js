@@ -1,9 +1,11 @@
 import React from 'react';
+import { DigitalClock } from '../time/DitigalClock';
 
 export const TimeContainer = () => {
     return (
         <>
-            <p>Time container</p>
+        <p>Time</p>
+            <DigitalClock />
         </>
     );
 }

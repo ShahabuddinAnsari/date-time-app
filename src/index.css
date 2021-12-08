@@ -6,12 +6,12 @@
 
 .digiClock {
   /* background-color: #0C325D; */
-  color: #44E70C;
-  font-size: 50px;
+  color: #00A8A0;
+  font-size: 30px;
   font-weight: 400;
-  padding: 12px;
+  padding: 4px;
   font-family: 'Teko', sans-serif;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 
 /* .digitalClockContainer {

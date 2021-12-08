@@ -21,7 +21,7 @@
   border-radius: 6px;
   margin: 8px;
   padding: 8px;
-  background-color: rgb(101, 155, 165);
+  background-color: rgb(235, 237, 238);
 }
 
 .header-main {
@@ -109,4 +109,33 @@
   left: 0;
   border: 2px solid black;
   border-radius: 100%;
+}
+
+.timer-stopWatch {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-container-timer {
+  cursor: pointer;
+  color: blue;
+  display: inline;
+}
+
+.time-container-stopWatch {
+  cursor: pointer;
+  color: blue;
+  display: inline;
+}
+
+.time-container-timer:hover,
+.time-container-timer:active {
+  color: #00A8A0;
+  text-decoration: underline;
+}
+
+.time-container-stopWatch:hover,
+.time-container-stopWatch:active {
+  color: #00A8A0;
+  text-decoration: underline;
 }

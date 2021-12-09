@@ -139,3 +139,38 @@
   color: #00A8A0;
   text-decoration: underline;
 }
+
+.modal-main {
+  position: absolute;
+  width: 700px;
+  height: 400px;
+  background-color: rgb(211, 205, 205);
+  border: 1px solid black;
+  z-index: 10;
+}
+
+.modal-header {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: yellow;
+}
+
+.modal-title {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-close {
+  width: 10%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: blue;
+}

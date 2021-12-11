@@ -12,11 +12,9 @@ export const TimeContainer = () => {
         setModalTitle(title);
     }
 
-    console.log('modal_status : ', isModalOpen);
-
     return (
         <>
-        <p>Time</p>
+            <p>Time</p>
 
             {
                 isModalOpen && <Modal title={modalTitle} onClick={toggleModal}/>

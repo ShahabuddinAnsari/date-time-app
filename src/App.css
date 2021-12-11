@@ -25,6 +25,8 @@
 }
 
 .header-main {
+  position: relative;
+  z-index: 20;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,9 +143,11 @@
 }
 
 .modal-main {
-  position: absolute;
-  width: 700px;
-  height: 400px;
+  position: fixed;
+  top: 38px;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgb(211, 205, 205);
   border: 1px solid black;
   z-index: 10;
@@ -153,7 +157,7 @@
   height: 30px;
   display: flex;
   justify-content: space-between;
-  background-color: yellow;
+  border-bottom: 1px solid black;
 }
 
 .modal-title {
@@ -171,6 +175,39 @@
   cursor: pointer;
 }
 
-.modal-content {
-  background-color: blue;
+.modal-close-link-parent {
+  cursor: pointer;
+}
+
+.modal-close-link {
+  width: 25px;
+  background-color: red;
+  height: 1px;
+}
+
+.modal-close-link-1 {
+  width: 25px;
+  background-color: red;
+  height: 1px;
+  transform: rotate(45deg);
+  position: relative;
+  left: 25px;
+}
+
+.modal-close-link-2 {
+  width: 25px;
+  background-color: red;
+  height: 1px;
+  transform: rotate(135deg);
+}
+
+/* //-------- need to revisit for hove on modal close  */
+.modal-close-link-1:hover,
+.modal-close-link-1:active {
+  height: 2px;
+}
+
+.modal-close-link-2:hover,
+.modal-close-link-2:active {
+  height: 2px;
 }

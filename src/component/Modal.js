@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Modal = ({title, onClick}) => {
+export const Modal = ({title, onClick, children}) => {
     return (
         <>
         <div className='modal-main'>
@@ -15,11 +15,7 @@ export const Modal = ({title, onClick}) => {
                 </div>
             </div>
             <div className='modal-content'>
-                <p>lkajsfdljaskfdjklsajf</p>
-                <p>lkajsfdljaskfdjklsajf</p>
-                <p>lkajsfdljaskfdjklsajf</p>
-                <p>lkajsfdljaskfdjklsajf</p>
-                <p>lkajsfdljaskfdjklsajf</p>
+                {children}
             </div>
         </div>
         </>

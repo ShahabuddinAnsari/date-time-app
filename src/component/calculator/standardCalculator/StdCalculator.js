@@ -41,6 +41,10 @@ class StdCalculator extends React.Component {
     try {
       result = eval(this.state.input.join(""));
 
+      if(result && typeof result === "number") {
+        result = result.toFixed(2);
+      }
+
     } catch (error) {
       result = "Error";
     }

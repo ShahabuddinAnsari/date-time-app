@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Modal } from '../Modal';
-import StdCalculator from '../calculator/StdCalculator'
+import StdCalculator from '../calculator/standardCalculator/StdCalculator';
+import { HeightConverter } from '../calculator/unitConverter/HeightConverter';
 
 export const CalcContainer = () => {
     const [isModalOpen, setModal] = useState(false);
@@ -14,11 +15,21 @@ export const CalcContainer = () => {
         <>
             {
                 isModalOpen && 
-                <Modal title={modalTitle} onClick={toggleModal}>
-                    <StdCalculator/>
+                <Modal title={modalTitle} onClick={toggleModal} classNameProps={modalTitle === "Standard Calculator" ? "calcModalCustomStyel" : ""}>
+                    {
+                        (modalTitle === "Standard Calculator") &&
+                        <StdCalculator/>
+                    }
+                    {
+                        (modalTitle === "Height Converter") &&
+                        <HeightConverter/>
+                    }
                 </Modal>
             }
-            <a onClick={() => toggleModal({title: 'StandardCalculator'})} href='#'>Calculator</a>
+            <div className='calcContainerContent'>
+                <a onClick={() => toggleModal({title: 'Standard Calculator'})} href='#'>StandardCalculator</a>
+                <a onClick={() => toggleModal({title: 'Height Converter'})} href='#'>Height Converter</a>
+            </div>
         </>
     );
 }

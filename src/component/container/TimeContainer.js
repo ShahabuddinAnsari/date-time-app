@@ -17,7 +17,7 @@ export const TimeContainer = () => {
             <p>Time</p>
 
             {
-                isModalOpen && <Modal title={modalTitle} onClick={toggleModal}/>
+                isModalOpen && <Modal title={modalTitle} onClick={toggleModal} />
             }
 
             <DigitalClock />

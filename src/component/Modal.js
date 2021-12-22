@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Modal = ({title, onClick, children}) => {
+export const Modal = ({title, onClick, children, classNameProps}) => {
     return (
         <>
         <div className='modal-main'>
@@ -14,7 +14,7 @@ export const Modal = ({title, onClick, children}) => {
                     <span style={{'transform': 'rotate(135deg)'}} className='modal-close-link-2'></span>
                 </div>
             </div>
-            <div className='modal-content'>
+            <div className={`modal-content ${classNameProps}`}>
                 {children}
             </div>
         </div>

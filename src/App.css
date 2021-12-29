@@ -346,7 +346,25 @@
 }
 
 .heightConverterMain input {
-  background-color: red;
+  background-color: white;
   height: 60px;
   width: 150px;
+  border: 1px solid black;
+}
+
+.resultBtn {
+  /* background-color: red; */
+  width: 150px;
+  height: 50px;
+  color: black;
+  font-size: larger;
+  margin: 8px;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.resultBtn:hover,
+.resultBtn:active {
+  /* background-color: rgba(255, 0, 0, 0.493); */
 }

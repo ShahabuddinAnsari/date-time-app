@@ -1,4 +1,5 @@
 import React,{ useState } from 'react';
+import { UnitConverterFormula } from '../../constants/UnitConverterFormula';
 
 export const HeightConverter = () => {
 
@@ -9,8 +10,14 @@ export const HeightConverter = () => {
     const [outputType, setOutputType] = useState(null);
 
     const onClick = () => {
-        console.log('test')
+        console.log('inputType : ', inputType);
+        console.log('outputType : ', outputType);
+        console.log('inputValue : ', inputValue);
 
+        console.log('formulaconts ', UnitConverterFormula);
+        const multiplyingFactor = UnitConverterFormula.filter(unit => unit.inputType === inputType)[0].outputType.filter(unit => unit.outputType === outputType)[0].multiplyingFactor;
+        const result = inputValue*multiplyingFactor;
+        console.log('result is : ', result.toFixed(4));
     }
 
     const onChange = (input) => {

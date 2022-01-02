@@ -9,7 +9,7 @@ export const HeightConverter = () => {
     const [outputType, setOutputType] = useState(null);
 
     const onClick = () => {
- 
+        console.log('test')
 
     }
 
